@@ -280,19 +280,68 @@ footer {
     margin-bottom: 12px;
 }
 
+
+/* ---------- About Contact ---------- */
+
+.about-contact {
+    margin-top: 25px;
+}
+
+.about-contact .contact-title {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+/* Email and Phone */
+
 .about-contact .contact-row {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 7px;
+    font-size: 15px;
 }
 
 .about-contact .contact-row svg {
+    display: block;
     width: 17px;
     height: 17px;
     flex-shrink: 0;
     stroke-width: 1.8;
     color: #555;
 }
+
+.about-contact .contact-row a {
+    color: #276fbf;
+    text-decoration: none;
+}
+
+.about-contact .contact-row a:hover {
+    text-decoration: underline;
+}
+
+/* GitHub and CV */
+
+.about-contact .academic-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.about-contact .academic-links a {
+    color: #276fbf;
+    text-decoration: none;
+}
+
+.about-contact .academic-links a:hover {
+    text-decoration: underline;
+}
+
+.about-contact .academic-links span {
+    color: #999;
+}
+
 
 
 
