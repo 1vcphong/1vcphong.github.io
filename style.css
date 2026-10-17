@@ -317,63 +317,81 @@ footer {
     margin: 0;
 }
 
-/* Email and phone */
 
-.about-contact .contact-details {
-    display: grid;
+/* ===== Academic Profile Contact ===== */
+
+.bio .profile-contact {
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+/* Heading */
+
+.bio .profile-contact-heading {
+    margin-bottom: 7px;
+    line-height: 1.5;
+}
+
+/* Force email and phone into separate rows */
+
+.bio .profile-contact-rows {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 5px;
 }
 
-.about-contact .contact-line {
+.bio .profile-contact-row {
     display: grid;
     grid-template-columns: 18px auto;
     align-items: center;
     column-gap: 9px;
+    line-height: 1.5;
+}
 
-    min-height: 22px;
-    width: max-content;
-    max-width: 100%;
+/* Icons */
 
-    font-size: 15px;
-    line-height: 1.4;
+.bio .profile-contact-row svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    stroke: #555;
+    stroke-width: 1.7;
+}
+
+/* Email and phone links */
+
+.bio .profile-contact-row a {
     color: #276fbf;
     text-decoration: none;
 }
 
-.about-contact .contact-line svg {
-    display: block;
-    width: 16px;
-    height: 16px;
-    stroke-width: 1.7;
-    color: #555;
-}
-
-.about-contact .contact-line:hover span {
+.bio .profile-contact-row a:hover {
     text-decoration: underline;
 }
 
 /* GitHub and CV */
 
-.about-contact .academic-links {
+.bio .profile-contact-links {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 5px;
-    font-size: 15px;
+    margin-top: 10px;
 }
 
-.about-contact .academic-links a {
+.bio .profile-contact-links a {
     color: #276fbf;
     text-decoration: none;
 }
 
-.about-contact .academic-links a:hover {
+.bio .profile-contact-links a:hover {
     text-decoration: underline;
 }
 
-.about-contact .academic-links span {
+.bio .profile-contact-links span {
     color: #999;
 }
+
 
 
 
