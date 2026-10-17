@@ -226,3 +226,39 @@ footer {
   }
 
 }
+
+/* Expandable lecture notes */
+
+.note-list details {
+  margin-bottom: 12px;
+}
+
+.note-list summary {
+  cursor: pointer;
+  color: #276fbf;
+  text-decoration: underline;
+}
+
+.note-list summary:hover {
+  color: #174c85;
+}
+
+.note-list details ul {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  padding-left: 30px;
+}
+
+.note-list details ul li {
+  margin-bottom: 8px;
+}
+
+.note-list details ul a {
+  color: #276fbf;
+  text-decoration: none;
+}
+
+.note-list details ul a:hover {
+  text-decoration: underline;
+}
+
