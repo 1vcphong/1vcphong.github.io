@@ -292,31 +292,63 @@ footer {
     font-size: 15px;
 }
 
-/* Email and Phone */
 
-.about-contact .contact-row {
+/* ---------- About Contact ---------- */
+
+/* Reduce space after biography */
+.bio > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.about-contact {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 7px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    margin-top: 16px;
+}
+
+/* Contact title */
+
+.about-contact .contact-title {
     font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
 }
 
-.about-contact .contact-row svg {
-    display: block;
-    width: 17px;
-    height: 17px;
-    flex-shrink: 0;
-    stroke-width: 1.8;
-    color: #555;
+/* Email and phone */
+
+.about-contact .contact-details {
+    display: grid;
+    gap: 5px;
 }
 
-.about-contact .contact-row a {
+.about-contact .contact-line {
+    display: grid;
+    grid-template-columns: 18px auto;
+    align-items: center;
+    column-gap: 9px;
+
+    min-height: 22px;
+    width: max-content;
+    max-width: 100%;
+
+    font-size: 15px;
+    line-height: 1.4;
     color: #276fbf;
     text-decoration: none;
 }
 
-.about-contact .contact-row a:hover {
+.about-contact .contact-line svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    stroke-width: 1.7;
+    color: #555;
+}
+
+.about-contact .contact-line:hover span {
     text-decoration: underline;
 }
 
@@ -325,8 +357,9 @@ footer {
 .about-contact .academic-links {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-top: 15px;
+    gap: 10px;
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 .about-contact .academic-links a {
@@ -341,6 +374,7 @@ footer {
 .about-contact .academic-links span {
     color: #999;
 }
+
 
 
 
